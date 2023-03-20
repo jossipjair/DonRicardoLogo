@@ -1,0 +1,115 @@
+
+@font-face {
+    font-family: 'NotoSans-Medium';
+    src: url("/fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .contenedor-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-texto{
+    margin-top: 10px;
+    animation-duration: 3s;
+    animation-name: textoCargando;
+    animation-iteration-count: infinite;
+    font-family: 'NotoSans-Medium';
+  }
+
+  .azul {
+    animation-duration: 3s;
+    animation-name: azul;
+    animation-iteration-count: infinite;
+    width: 50px;
+    height: 100px;
+    border-radius: 0 100px 100px 0;
+  }
+
+  .naranja {
+    animation-duration: 3s;
+    animation-name: naranja;
+    animation-iteration-count: infinite;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: -1.5px;
+  }
+
+  .verde {
+    animation-duration: 3s;
+    animation-name: verde;
+    animation-iteration-count: infinite;/**/
+    width: 90px;
+    height: 50px;
+    border-radius: 100px 100px 0 0;
+    margin-left: -6px;
+  }
+
+  @keyframes textoCargando{
+    from{
+        color: white;
+    }
+
+    to{
+        color: black;
+        opacity: 75%;
+    }
+  }
+
+  @keyframes azul {
+    0%{
+        background: #3185bc;
+        opacity: 0%;
+    }
+
+    75%{
+        background: #3185bc;
+        opacity: 75%;
+    }
+    100%{
+        background: #3185bc;
+        opacity: 100%;
+    }
+  }
+
+  @keyframes naranja {
+    0%{
+        background: #e7834c;
+        opacity: 0%;
+    }
+
+    75%{
+        background: #e7834c;
+        opacity: 75%;
+    }
+    100%{
+        background: #e7834c;
+        opacity: 100%;
+    }
+
+  }
+
+  @keyframes verde {
+    0%{
+        background: #85b451;
+        opacity: 0%;
+    }
+    75%{
+        background: #85b451;
+        opacity: 75%;
+    }
+    100%{
+        background: #85b451;
+        opacity: 100%;
+    }
+  }
